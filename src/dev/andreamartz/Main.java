@@ -1,28 +1,10 @@
 package dev.andreamartz;
 
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = a;
-        a = 100;
-        System.out.println("a = " + a + " - b =  " + b);
-
-        Person alex = new Person("alex");
-        Person mariam = alex;
-
-        alex.name = "Alexander";  // this will change Mariam's name also!
-    }
-    // *************************************************************
-    // Getting Started - Primitive and Reference Types differences
-    // *************************************************************
-
-    static class Person {
-        String name;
-
-        Person(String name) {
-            this.name = name;
-        }
     }
 
     // *************************************************************
@@ -31,11 +13,21 @@ public class Main {
     public class PassByValVsRef {
         public static void main(String[] args) {
             int x = 0;
-            incrementValue(x);
-            System.out.println(x);  // prints 0 NOT 1
+            int y = incrementValue(x);
+            System.out.println(x);  // 0
+            System.out.println(y);  // 1
+            Point point = new Point(100, 100);
+            changePoint(point);
+            System.out.println(point);    //  java.awt.Point[x=0,y=0], NOT x=100, y=100, because point is a reference type
         }
-        static void incrementValue(int value) {
-            value++;
+
+        static void changePoint(Point point) {
+            point.x = 0;
+            point.y = 0;
+        }
+
+        static int incrementValue(int value) {
+            return value + 1;
         }
 
         // Pass by value lecture
