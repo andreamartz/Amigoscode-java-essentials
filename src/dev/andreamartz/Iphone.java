@@ -18,6 +18,13 @@ public class Iphone {
         this.isWaterResistant = isWaterResistant;
     }
 
+    // in this constructor, we set default values for price and isWaterResistant:
+    public Iphone(String model) {
+        // NOTE: the following line is a call to another constructor!
+        this(model, -1.0, false);
+        this.model = model;
+    }
+
 
     // the Iphone `behaviors`:
 
