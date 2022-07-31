@@ -8,6 +8,16 @@ public class Iphone {
     private double price;
     private boolean isWaterResistant;
 
+    // default Iphone constructor:
+    public Iphone() {}
+
+    // another Iphone constructor:
+    public Iphone(String model, double price, boolean isWaterResistant) {
+        this.model = model;
+        this.price = price;
+        this.isWaterResistant = isWaterResistant;
+    }
+
 
     // the Iphone `behaviors`:
 
