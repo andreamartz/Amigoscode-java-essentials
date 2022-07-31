@@ -10,7 +10,7 @@ public class Classes {
         System.out.println(iphone7Plus.getPrice());  // 0.0
         System.out.println(iphone7Plus.isWaterResistant());   // false
 
-        iphone7Plus.setModel("7+");
+        iphone7Plus.setModel(IphoneModel.IPHONE_7_PLUS);
         iphone7Plus.setPrice(200.00);
         iphone7Plus.setWaterResistant(false);
 
@@ -21,7 +21,7 @@ public class Classes {
         System.out.println(iphone7Plus.isWaterResistant());   // false
 
         // iphoneXMax
-        iphoneXMax.setModel("X Max");
+        iphoneXMax.setModel(IphoneModel.IPHONE_X);
         iphoneXMax.setPrice(1300.00);
         iphoneXMax.setWaterResistant(true);
 
@@ -32,10 +32,12 @@ public class Classes {
         System.out.println(iphoneXMax.isWaterResistant());   // true
 
         // another 7Plus using the Iphone constructor we wrote:
-        Iphone iphone7Plus2 = new Iphone("7Plus2", 200.00, false);
+        Iphone iphone7Plus2 = new Iphone(IphoneModel.IPHONE_7_PLUS2, 200.00, false);
         System.out.println(" ");
         System.out.println("7Plus2:");  // 7Plus2:
-        System.out.println(iphone7Plus2.getModel());  // 7Plus2
+//        System.out.println(iphone7Plus2.getModel());  // 7Plus2  (before enums lecture)
+        System.out.println(iphone7Plus.getModel());  // IPHONE_7_PLUS  (enums lecture)
+        System.out.println(iphone7Plus.getModel().getModelStr());  // Iphone 7+  (enums lecture)
         System.out.println(iphone7Plus2.getPrice());  // 200.00
         System.out.println(iphone7Plus2.isWaterResistant());   // false
         iphone7Plus2.setPrice(100.00);

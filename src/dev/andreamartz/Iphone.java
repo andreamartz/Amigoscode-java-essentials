@@ -4,7 +4,8 @@ public class Iphone {
     // the following three variables are called `properties`  on the class
 
     // `private` is used in encapsulation, to hide data from the outside world
-    private String model;
+//    private String model;
+    private IphoneModel model;  // uses the IphoneModel Enum
     private double price;
     private boolean isWaterResistant;
 
@@ -12,14 +13,14 @@ public class Iphone {
     public Iphone() {}
 
     // another Iphone constructor:
-    public Iphone(String model, double price, boolean isWaterResistant) {
+    public Iphone(IphoneModel model, double price, boolean isWaterResistant) {
         this.model = model;
         this.price = price;
         this.isWaterResistant = isWaterResistant;
     }
 
     // in this constructor, we set default values for price and isWaterResistant:
-    public Iphone(String model) {
+    public Iphone(IphoneModel model) {
         // NOTE: the following line is a call to another constructor!
         this(model, -1.0, false);
         this.model = model;
@@ -29,11 +30,11 @@ public class Iphone {
     // the Iphone `behaviors`:
 
     // Getters and Setters ( ^ Enter )
-    public String getModel() {
+    public IphoneModel getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    public void setModel(IphoneModel model) {
         this.model = model;
     }
 
