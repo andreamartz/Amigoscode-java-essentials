@@ -52,4 +52,14 @@ public class Iphone {
     public void setWaterResistant(boolean waterResistant) {
         this.isWaterResistant = waterResistant;
     }
+
+    // ^ + Enter to add the toString method:
+    @Override
+    public String toString() {
+        return "Iphone{" +
+                "model='" + model + '\'' +
+                ", price=" + price +
+                ", isWaterResistant=" + isWaterResistant +
+                '}';
+    }
 }
