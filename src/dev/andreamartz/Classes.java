@@ -8,28 +8,28 @@ public class Classes {
         // iphone7Plus
         System.out.println(iphone7Plus.getModel());  // null
         System.out.println(iphone7Plus.getPrice());  // 0.0
-        System.out.println(iphone7Plus.isWaterResistant());   // false
+        System.out.println(iphone7Plus.getIsWaterResistant());   // false
 
         iphone7Plus.setModel(IphoneModel.IPHONE_7_PLUS);
         iphone7Plus.setPrice(200.00);
-        iphone7Plus.setWaterResistant(false);
+        iphone7Plus.setIsWaterResistant(false);
 
         System.out.println(" ");
         System.out.println("7Plus:");  // 7Plus:
         System.out.println(iphone7Plus.getModel());  // 7+
         System.out.println(iphone7Plus.getPrice());  // 200.00
-        System.out.println(iphone7Plus.isWaterResistant());   // false
+        System.out.println(iphone7Plus.getIsWaterResistant());   // false
 
         // iphoneXMax
         iphoneXMax.setModel(IphoneModel.IPHONE_X);
         iphoneXMax.setPrice(1300.00);
-        iphoneXMax.setWaterResistant(true);
+        iphoneXMax.setIsWaterResistant(true);
 
         System.out.println(" ");
         System.out.println("XMax:");  // X Max:
         System.out.println(iphoneXMax.getModel());  // X Max
         System.out.println(iphoneXMax.getPrice());  // 1300.00
-        System.out.println(iphoneXMax.isWaterResistant());   // true
+        System.out.println(iphoneXMax.getIsWaterResistant());   // true
 
         // another 7Plus using the Iphone constructor we wrote:
         Iphone iphone7Plus2 = new Iphone(IphoneModel.IPHONE_7_PLUS2, 200.00, false);
@@ -39,7 +39,7 @@ public class Classes {
         System.out.println(iphone7Plus.getModel());  // IPHONE_7_PLUS  (enums lecture)
         System.out.println(iphone7Plus.getModel().getModelStr());  // Iphone 7+  (enums lecture)
         System.out.println(iphone7Plus2.getPrice());  // 200.00
-        System.out.println(iphone7Plus2.isWaterResistant());   // false
+        System.out.println(iphone7Plus2.getIsWaterResistant());   // false
         iphone7Plus2.setPrice(100.00);
         System.out.println("7Plus2 new price: " + iphone7Plus2.getPrice());
 

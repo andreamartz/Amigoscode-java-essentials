@@ -4,7 +4,7 @@ public class Iphone {
     // the following three variables are called `properties`  on the class
 
     // `private` is used in encapsulation, to hide data from the outside world
-//    private String model;
+//    private String model;  // prior to introducing enums
     private IphoneModel model;  // uses the IphoneModel Enum
     private double price;
     private boolean isWaterResistant;
@@ -46,12 +46,12 @@ public class Iphone {
         this.price = price;
     }
 
-    public boolean isWaterResistant() {
+    public boolean getIsWaterResistant() {
         return isWaterResistant;
     }
 
-    public void setWaterResistant(boolean waterResistant) {
-        this.isWaterResistant = waterResistant;
+    public void setIsWaterResistant(boolean isWaterResistant) {
+        this.isWaterResistant = isWaterResistant;
     }
 
     // ^ + Enter to add the toString method:
