@@ -1,6 +1,8 @@
 package dev.andreamartz;
 
-public class Animal {
+// this is an abstract class
+    // abstract classes can have abstract methods
+abstract public class Animal {
     private String name;
 
     public Animal(String name) {
@@ -14,6 +16,10 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+    // When a method on a (abstract) class is abstract, it means that anyone who extends the class MUST implement that method
+        // the method definition on the class has no implementation
+    public abstract void makeSound();
 
     @Override
     public String toString() {

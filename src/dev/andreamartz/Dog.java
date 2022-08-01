@@ -19,6 +19,11 @@ public class Dog extends Animal {
         this.breed = breed;
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("woof woof");
+    }
+
 //    @Override
 //    public String toString() {
 //        return "Dog{" +

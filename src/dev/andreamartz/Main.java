@@ -4,12 +4,11 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal("bobby");
-        Dog dog = new Dog("flex", "Bulldog");
-        System.out.println(animal.getName());
-        System.out.println(dog);
-//        System.out.println(dog.getName() + " is a " + dog.getBreed());
-
+//        Animal animal = new Animal("bobby");  // we cannot instantiate an abstract class
+        Animal dog = new Dog("flex", "Bulldog");
+        Animal cat = new Cat("rosie");
+        dog.makeSound();
+        cat.makeSound();
     }
 
     // *************************************************************
