@@ -7,35 +7,16 @@ public class Main {
 //        Animal animal = new Animal("bobby");  // we cannot instantiate an abstract class
         Animal dog = new Dog("flex", "Bulldog");
         Animal cat = new Cat("rosie");
+
+        // Polymorphism
+            // dog and cat are both Animals...
+            // ...but when we invoke the `makeSound` method, it takes two different forms
         dog.makeSound();
         cat.makeSound();
-    }
 
-    // *************************************************************
-    // Getting Started - Pass by value and pass by reference
-    // *************************************************************
-    public class PassByValVsRef {
-        public static void main(String[] args) {
-            int x = 0;
-            int y = incrementValue(x);
-            System.out.println(x);  // 0
-            System.out.println(y);  // 1
-            Point point = new Point(100, 100);
-            changePoint(point);
-            System.out.println(point);    //  java.awt.Point[x=0,y=0], NOT x=100, y=100, because point is a reference type
-        }
-
-        static void changePoint(Point point) {
-            point.x = 0;
-            point.y = 0;
-        }
-
-        static int incrementValue(int value) {
-            return value + 1;
-        }
-
-        // Pass by value lecture
-            // 4:40 "you should never mutate primitives here   value = value + 1
-            // instead, return a brand new one"
+        // Polymorphism means that something takes many forms
+            // for example, the `+` operator can mean different things depending on whether it is being used as a string operation or a mathematical operation
+        System.out.println("A" + "B");
+        System.out.println(1 + 2);
     }
 }
