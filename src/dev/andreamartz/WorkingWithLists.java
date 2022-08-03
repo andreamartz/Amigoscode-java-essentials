@@ -7,6 +7,7 @@ import java.util.List;
 public class WorkingWithLists {
     public static void main(String[] args) {
         List numbers = new ArrayList();
+
         // with a List, you can add as many elements as you want:
         numbers.add(1);
         numbers.add(2);
