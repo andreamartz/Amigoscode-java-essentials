@@ -1,20 +1,18 @@
 package dev.andreamartz;
 
 import java.awt.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZonedDateTime;
+import java.time.*;
 
 public class Main {
     public static void main(String[] args) {
-        ZonedDateTime now = ZonedDateTime.now();
-        LocalDateTime nowLDT = LocalDateTime.now();
         LocalDate localDate = LocalDate.now();
-        LocalTime localTime = LocalTime.now();
-        System.out.println(now);
-        System.out.println(nowLDT);
+        LocalDateTime localDateTime = LocalDateTime.now(ZoneId.of("Australia/West"));
+
+
+//        ZoneId.getAvailableZoneIds().forEach(System.out::println);
+
         System.out.println(localDate);
-        System.out.println(localTime);
+        System.out.println(localDateTime);
+        System.out.println(LocalDateTime.now());
     }
 }
