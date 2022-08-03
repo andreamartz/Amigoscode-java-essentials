@@ -1,7 +1,7 @@
 package dev.andreamartz;
 
 // this is an abstract class
-    // abstract classes can have abstract methods
+    // abstract classes can have abstract methods as well as other methods
 abstract public class Animal {
     private String name;
 

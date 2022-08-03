@@ -5,8 +5,11 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
 //        Animal animal = new Animal("bobby");  // we cannot instantiate an abstract class
-        Animal dog = new Dog("flex", "Bulldog");
-        Animal cat = new Cat("rosie");
+//        Animal dog = new Dog("flex", "Bulldog");
+//        Animal cat = new Cat("rosie");
+
+        AnimalInterface dog = new DogFromInterface("flex", "Bulldog");
+        AnimalInterface cat = new CatFromInterface("rosie");
 
         // Polymorphism
             // dog and cat are both Animals...
