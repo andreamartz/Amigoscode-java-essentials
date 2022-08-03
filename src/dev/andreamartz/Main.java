@@ -21,5 +21,9 @@ public class Main {
             // for example, the `+` operator can mean different things depending on whether it is being used as a string operation or a mathematical operation
         System.out.println("A" + "B");
         System.out.println(1 + 2);
+
+        SuperMath superMath = new SuperMath();
+        System.out.println(superMath.add(1, 90));
+        System.out.println(superMath.add(1, 90, 2));
     }
 }
