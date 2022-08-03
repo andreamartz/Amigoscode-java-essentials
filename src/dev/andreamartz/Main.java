@@ -1,29 +1,20 @@
 package dev.andreamartz;
 
 import java.awt.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZonedDateTime;
 
 public class Main {
     public static void main(String[] args) {
-//        Animal animal = new Animal("bobby");  // we cannot instantiate an abstract class
-//        Animal dog = new Dog("flex", "Bulldog");
-//        Animal cat = new Cat("rosie");
-
-        AnimalInterface dog = new DogFromInterface("flex", "Bulldog");
-        AnimalInterface cat = new CatFromInterface("rosie");
-
-        // Polymorphism
-            // dog and cat are both Animals...
-            // ...but when we invoke the `makeSound` method, it takes two different forms
-        dog.makeSound();
-        cat.makeSound();
-
-        // Polymorphism means that something takes many forms
-            // for example, the `+` operator can mean different things depending on whether it is being used as a string operation or a mathematical operation
-        System.out.println("A" + "B");
-        System.out.println(1 + 2);
-
-        SuperMath superMath = new SuperMath();
-        System.out.println(superMath.add(1, 90));
-        System.out.println(superMath.add(1, 90, 2));
+        ZonedDateTime now = ZonedDateTime.now();
+        LocalDateTime nowLDT = LocalDateTime.now();
+        LocalDate localDate = LocalDate.now();
+        LocalTime localTime = LocalTime.now();
+        System.out.println(now);
+        System.out.println(nowLDT);
+        System.out.println(localDate);
+        System.out.println(localTime);
     }
 }
